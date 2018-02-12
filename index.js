@@ -79,7 +79,7 @@ window.loadLeverJobs = function (options) {
       }
       //content += '</ul>';
     }
-    document.getElementById("lever-jobs-container").innerHTML = content;
+    document.getElementById("jobcontainer").innerHTML = content;
   }
 
   if (options.includeCss) {
