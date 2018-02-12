@@ -53,7 +53,7 @@ window.loadLeverJobs = function (options) {
       var title = sanitizeHTML(_data[i].title || 'Uncategorized');
       var titlesanitizeAttribute = sanitizeAttribute(title);
 
-      content += '<h5 class="fl-heading"><span class="fl-heading-text">' + title + '</span></h5>';
+      content += '<br/><h5 class="fl-heading"><span class="fl-heading-text">' + title + '</span></h5>';
 
       for (j = 0; j < _data[i].postings.length; j ++) {
         var posting = _data[i].postings[j];
@@ -66,7 +66,7 @@ window.loadLeverJobs = function (options) {
         var teamsanitizeAttribute = sanitizeAttribute(team);
         var link = posting.hostedUrl+leverParameter;
 
-        <div class="fl-module-content f1-node-content"><h5 class="fl-heading"><a href="' + link + '" target="_blank" rel="noopener"><span class="fl-heading-text">' + postingTitle + ' - ' + location + </span></a></h5></div>
+        content +=<div class="fl-module-content f1-node-content"><h5 class="fl-heading"><a href="' + link + '" target="_blank" rel="noopener"><span class="fl-heading-text">' + postingTitle + ' - ' + location + </span></a></h5></div>
         //content += '<a class="lever-job-title" href="' + link + '"">' + postingTitle + '</a><span class="lever-job-tag">' + location + '</span></li>';
       }
       //content += '</ul>';
