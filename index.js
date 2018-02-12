@@ -66,13 +66,15 @@ window.loadLeverJobs = function (options) {
         var teamsanitizeAttribute = sanitizeAttribute(team);
         var link = posting.hostedUrl+leverParameter;
 
-        content +='<div class="fl-module-content f1-node-content"><h5 class="fl-heading"><a href="' 
+        //content +='<div class="fl-module-content f1-node-content"><h5 class="fl-heading"><a href="' 
+        content +='<h5 class="fl-heading"><a href="' 
         content +=  link 
         content +='" target="_blank" rel="noopener"><span class="fl-heading-text">' 
         content += postingTitle 
         content += ' - ' 
         content += location
-        content += '</span></a></h5></div>'
+        content += '</span></a></h5>'
+        //content += '</span></a></h5></div>'
         //content += '<a class="lever-job-title" href="' + link + '"">' + postingTitle + '</a><span class="lever-job-tag">' + location + '</span></li>';
       }
       //content += '</ul>';
